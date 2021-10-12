@@ -1,3 +1,13 @@
+<?php
+function build_calendar($month, $year)
+{
+//creating an array containing names of all days in a week
+$daysOfWeek = array('Sunday','Monday','Tuesday','Wednesday','Thursday','Friday','Saturday');
+  
+//then we shall get first day of the month
+$firstDayOfMonth = mktime(0,0,0,$month,1,$year);
+}
+?>
 <html>
   <head>
     <title>This is Talha Rahman's Skills-Page</title>
@@ -12,12 +22,9 @@
   </head>
   <body>
     <h1><center>Talha Rahman's Skills Page</center></h1>
-    <center>
     <table>
-
       
       
     </table>
-    </center>
-    </body>
+  </body>
 </html>
