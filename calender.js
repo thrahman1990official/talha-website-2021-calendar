@@ -14,7 +14,7 @@ date1 = settingDate(date1, 31);
 date2 = settingDate(date2, 31);
 let temp;
 let dates = [];
-while(date1<=date2)
+while(date1 <= date2)
 {
  if(date1.getDate()!=31)
   {
@@ -29,6 +29,8 @@ while(date1<=date2)
    date1.setMonth(date1.getMonth() + 1);
   }
 console.log(dates);
+let content="";
+let weekDays=[{shortDay:"Mon", fullDay:"Monday"},{shortDay:"Tue", fullDay:"Tuesday"},{shortDay:"Wed", fullday:"Wednesday"},{shortDay:"Thu", fullDay:"Thursday"},{shortDay:"Fri", fullDay:"Friday"},{shortDay:"Sat", fullDay:"Saturday"},{shortDay:"Sun", fullDay:"Sunday"}]
 }
   
 let content = getDatesBetween("2020/01/01", "2021/01/01");
