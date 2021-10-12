@@ -20,7 +20,7 @@ while(date1<=date2)
   {
   temp=settingDate(date1,0); 
    if(temp>=range1 && temp<=range2) dates.push(temp);
-    date1=setDate(date1,31);
+    date1=settingDate(date1, 31);
   }
  else
   {
