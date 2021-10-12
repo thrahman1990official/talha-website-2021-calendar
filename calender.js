@@ -29,8 +29,21 @@ while(date1 <= date2)
    date1.setMonth(date1.getMonth() + 1);
   }
 console.log(dates);
-let content="";
-let weekDays=[{shortDay:"Mon", fullDay:"Monday"},{shortDay:"Tue", fullDay:"Tuesday"},{shortDay:"Wed", fullday:"Wednesday"},{shortDay:"Thu", fullDay:"Thursday"},{shortDay:"Fri", fullDay:"Friday"},{shortDay:"Sat", fullDay:"Saturday"},{shortDay:"Sun", fullDay:"Sunday"}]
+let content = "";
+let weekDays = [
+ { shortDay:"Mon", fullDay:"Monday" },
+ { shortDay:"Tue", fullDay:"Tuesday" },
+ { shortDay:"Wed", fullday:"Wednesday" },
+ { shortDay:"Thu", fullDay:"Thursday" },
+ { shortDay:"Fri", fullDay:"Friday" },
+ { shortDay:"Sat", fullDay:"Saturday" },
+ { shortDay:"Sun", fullDay:"Sunday" }];
+ let LastDate, firstDate;
+ for(let i=0; i<dates.length; i++)
+ {
+  LastDate=dates[i];
+  firstDate = new Date(dates[i].getFullYear(), dates[i].getMonth(), 1);
+ }
 }
   
 let content = getDatesBetween("2020/01/01", "2021/01/01");
