@@ -47,12 +47,17 @@ let weekDays =
  { shortDay: "Sun", fullDay: "Sunday" }];
  
  let LastDate, firstDate;
- for(let i=0; i<dates.length; i++)
+ for(let i = 0; i < dates.length; i++)
  {
-  LastDate=dates[i];
-  firstDate= new Date(dates[i].getFullYear(),dates[i].getMonth(), 1);
+  LastDate = dates[i];
+  firstDate = new Date(dates[i].getFullYear(), dates[i].getMonth(), 1);
   content += "<div id='calenderTable_" + (i + 1) + "'>";
-  content += "<h2>" + firstDate.toString().split(" ")[0] + "-" + firstDate.getFullYear() + "</h2>";
+  content += 
+    "<h2>" + 
+    firstDate.toString().split(" ")[0] + 
+    "-" + 
+    firstDate.getFullYear() + 
+    "</h2>";
   content += "</div>";
  }
  return content;
