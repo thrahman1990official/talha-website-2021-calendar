@@ -40,6 +40,11 @@ function getDatesBetween(date1, date2)
   firstDate= new Date(dates[i].getFullYear(), dates[i].getMonth(), 1);
   content+="<div id='calenderTable_"+(i+1)+"'>";
   content+="<h2>"+firstDate.toString().split(" ")[0]+"-"+firstDate.getFullYear()+"</h2>";
+  content+="<table >";
+  content+="<thead >";
+  weekDays.map(item => {content+="<th>"+item.fullDay+"</th>";})
+  content+="</thead>";
+  content+="</thead>";
   content+="</div>";
  }
  return content;
