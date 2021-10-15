@@ -55,7 +55,7 @@ function getDatesBetween(date1, date2)
         displayNum = j < 10 ? "0" + j : j;
         if(j==1)
         {
-          if(firstDate.toString().split(" ")[0])
+          if(firstDate.toString().split(" ")[0]== weekDays[k].shortDay)
             
         }
       }
