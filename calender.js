@@ -44,6 +44,24 @@ function getDatesBetween(date1, date2)
   content+="<thead >";
   weekDays.map(item => {content += "<th>" + item.fullDay + "</th>";})
   content += "</thead>";
+  content += "<tbody >";
+   let j=1;
+   let displayNum,idMonth;
+   while(j<=LastDate.getDate())
+   {
+     content += "<tr>";
+      for (let k = 0; k < 7; k++)
+      {
+        displayNum = j < 10 ? "0" + j : j;
+        if(j==1)
+        {
+          if(firstDate.toString().split(" ")[0])
+            
+        }
+      }
+     content += "</tr>";
+   }
+  content += "</tbody >";
   content += "</table>";
   content += "</div>";
  }
