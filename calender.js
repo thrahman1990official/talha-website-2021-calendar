@@ -42,10 +42,10 @@ function getDatesBetween(date1, date2)
   content+="<h2>"+firstDate.toString().split(" ")[0]+"-"+firstDate.getFullYear()+"</h2>";
   content+="<table >";
   content+="<thead >";
-  weekDays.map(item => {content+="<th>"+item.fullDay+"</th>";})
-  content+="</thead>";
-  content+="</thead>";
-  content+="</div>";
+  weekDays.map(item => {content += "<th>" + item.fullDay + "</th>";})
+  content += "</thead>";
+  content += "</table>";
+  content += "</div>";
  }
  return content;
 }
