@@ -31,7 +31,7 @@ function getDatesBetween(date1, date2)
       }
     console.log(dates);
     let content="";
-    let weekDays=[{ shortDay: "Mon", fullDay: "Monday" },{ shortDay: "Tue", fullDay: "Tuesday" },{ shortDay: "Wed", fullday: "Wednesday" },{ shortDay: "Thu", fullDay: "Thursday" },{ shortDay: "Fri", fullDay: "Friday" },{ shortDay: "Sat", fullDay: "Saturday" },{ shortDay: "Sun", fullDay: "Sunday" }];
+    let weekDays=[{ shortDay: "Mon", fullDay: "Monday" },{ shortDay: "Tue", fullDay: "Tuesday" },{ shortDay: "Wed", fullDay: "Wednesday" },{ shortDay: "Thu", fullDay: "Thursday" },{ shortDay: "Fri", fullDay: "Friday" },{ shortDay: "Sat", fullDay: "Saturday" },{ shortDay: "Sun", fullDay: "Sunday" }];
  
  let LastDate, firstDate;
  for(let i=0; i<dates.length; i++)
@@ -55,7 +55,7 @@ function getDatesBetween(date1, date2)
         displayNum = j < 10 ? "0" + j : j;
         if(j==1)
         {
-          if(firstDate.toString().split(" ")[0]== weekDays[k].shortDay)
+          if(firstDate.toString().split(" ")[0] == weekDays[k].shortDay)
             
         }
       }
