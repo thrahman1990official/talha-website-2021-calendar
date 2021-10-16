@@ -12,7 +12,7 @@ function getDatesBetween(date1, date2)
   date1 = settingDate(date1, 31);
   date2 = settingDate(date2, 31);
   let temp;
-  let dates=[];
+  let dates = [];
   
     while(date1<=date2)
       {
@@ -24,28 +24,28 @@ function getDatesBetween(date1, date2)
         }
       else
         {
-        temp=new Date(date1);
-           if(temp>=range1 && temp<=range2) dates.push(temp);
+        temp = new Date(date1);
+           if(temp >= range1 && temp <= range2) dates.push(temp);
         date1.setMonth(date1.getMonth() + 1);
         }
       }
     console.log(dates);
-    let content="";
-    let weekDays=[{ shortDay: "Mon", fullDay: "Monday" },{ shortDay: "Tue", fullDay: "Tuesday" },{ shortDay: "Wed", fullDay: "Wednesday" },{ shortDay: "Thu", fullDay: "Thursday" },{ shortDay: "Fri", fullDay: "Friday" },{ shortDay: "Sat", fullDay: "Saturday" },{ shortDay: "Sun", fullDay: "Sunday" }];
+    let content = "";
+    let weekDays = [{ shortDay: "Mon", fullDay: "Monday" },{ shortDay: "Tue", fullDay: "Tuesday" },{ shortDay: "Wed", fullDay: "Wednesday" },{ shortDay: "Thu", fullDay: "Thursday" },{ shortDay: "Fri", fullDay: "Friday" },{ shortDay: "Sat", fullDay: "Saturday" },{ shortDay: "Sun", fullDay: "Sunday" }];
  
  let LastDate, firstDate;
  for(let i=0; i<dates.length; i++)
  {
-  LastDate=dates[i];
-  firstDate= new Date(dates[i].getFullYear(), dates[i].getMonth(), 1);
-  content+="<div id='calenderTable_"+(i+1)+"'>";
-  content+="<h2>"+firstDate.toString().split(" ")[0]+"-"+firstDate.getFullYear()+"</h2>";
-  content+="<table class='calenderTable'>";
-  content+="<thead >";
+  LastDate = dates[i];
+  firstDate = new Date(dates[i].getFullYear(), dates[i].getMonth(), 1);
+  content += "<div id='calenderTable_"+(i+1)+"'>";
+  content += "<h2>"+firstDate.toString().split(" ")[0]+"-"+firstDate.getFullYear()+"</h2>";
+  content += "<table class='calenderTable'>";
+  content += "<thead >";
   weekDays.map(item => {content += "<th>" + item.fullDay + "</th>";})
   content += "</thead>";
   content += "<tbody >";
-   let j=1;
+   let j = 1;
    let displayNum, idMonth;
    while(j <= LastDate.getDate())
    {
