@@ -38,8 +38,8 @@ function getDatesBetween(date1, date2)
  {
   LastDate = dates[i];
   firstDate = new Date(dates[i].getFullYear(), dates[i].getMonth(), 1);
-  content += "<div id='calenderTable_"+(i+1)+"'>";
-  content += "<h2>"+firstDate.toString().split(" ")[0]+"-"+firstDate.getFullYear()+"</h2>";
+  content += "<div id='calenderTable_" + (i + 1) + "' class='calenderDiv'>";
+  content += "<h2>" + firstDate.toString().split(" ")[0] + "-" + firstDate.getFullYear() + "</h2>";
   content += "<table class='calenderTable'>";
   content += "<thead >";
   weekDays.map(item => {content += "<th>" + item.fullDay + "</th>";})
