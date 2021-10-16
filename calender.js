@@ -30,7 +30,7 @@ function getDatesBetween(date1, date2)
         }
       }
     console.log(dates);
-    let content = "";
+    let content = "<div class='calenderBtns'><button id='calenderPrev'>Prev</button> | <button id='calenderNext'>Next</button></div>";
     let weekDays = [{ shortDay: "Mon", fullDay: "Monday" },{ shortDay: "Tue", fullDay: "Tuesday" },{ shortDay: "Wed", fullDay: "Wednesday" },{ shortDay: "Thu", fullDay: "Thursday" },{ shortDay: "Fri", fullDay: "Friday" },{ shortDay: "Sat", fullDay: "Saturday" },{ shortDay: "Sun", fullDay: "Sunday" }];
  
  let LastDate, firstDate;
