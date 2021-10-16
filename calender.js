@@ -85,7 +85,11 @@ function getDatesBetween(date1, date2)
  }
  return content;
 }
-function callnext(){ let alltable = document.getElementsByClassName('calenderDiv'); }
+function callnext()
+{ 
+  let alltable = document.getElementsByClassName("calenderDiv"); 
+  document.getElementById('calenderPrev').disabled=false;
+}
 function callprev(){}
 let content = getDatesBetween("2020/01/01", "2021/01/01");
 document.getElementById("calender").innerHTML = content;
