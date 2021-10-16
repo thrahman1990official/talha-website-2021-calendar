@@ -90,11 +90,20 @@ function callnext()
   let alltable = document.getElementsByClassName("calenderDiv"); 
   document.getElementById("calenderPrev").disabled=false;
   calenderShow++;
+  if(calenderShow<=alltable.length)
+  {
+   for(let i=0; i<alltable.length; i++)
+   {alltable[i].style.display="none";}
+  }
   for (let i=0; i<alltable.length; i++)
   {
   alltable[i].style.display="none";
   }
   document.getElementById("calenderTable_"+calenderShow).style.display="block";
+  if(calenderShow==alltable.length)
+  {
+    document.getElementById("calenderNext").disabled = true;
+  }
 }
 function callprev(){}
 let content = getDatesBetween("2020/01/01", "2021/01/01");
