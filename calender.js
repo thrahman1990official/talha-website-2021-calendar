@@ -105,6 +105,25 @@ function callnext()
     document.getElementById("calenderNext").disabled = true;
   }
 }
-function callprev(){}
+function callprev()
+{
+  let alltable = document.getElementsByClassName("calenderDiv"); 
+  document.getElementById("calenderNext").disabled=false;
+  calenderShow--;
+  if(calenderShow>=1)
+  {
+   for(let i=0; i<alltable.length; i++)
+   {alltable[i].style.display="none";}
+  }
+  for (let i=0; i<alltable.length; i++)
+  {
+  alltable[i].style.display="none";
+  }
+  document.getElementById("calenderTable_"+calenderShow).style.display="block";
+  if(calenderShow==1)
+  {
+    document.getElementById("calenderNext").disabled = true;
+  }
+}
 let content = getDatesBetween("2020/01/01", "2021/01/01");
 document.getElementById("calender").innerHTML = content;
